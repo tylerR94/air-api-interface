@@ -1,0 +1,16 @@
+{
+  "name": "air-api-interface",
+  "version": "1.0.0",
+  "description": "This application is used to batch call API contacts through the Air api/v1/calls POST endpoint. Enabling rapid API dialing of CSV data",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Tyler Richards",
+  "license": "ISC",
+  "dependencies": {
+    "cli-progress": "^3.12.0",
+    "readline-sync": "^1.4.10"
+  }
+}
