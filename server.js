@@ -35,9 +35,6 @@ const makeCalls = (bearerToken, promptId, peopleToCall) => {
     obj.promptId = promptId;
   });
 
-
-  let counter = 0;
-
   const url = 'https://chat.air.ai/api/v1/calls';
   peopleToCall.forEach(async (obj) => {
       const options = {
@@ -52,7 +49,6 @@ const makeCalls = (bearerToken, promptId, peopleToCall) => {
       fetch(url, options)
           .then(response => response.json())
           .then(data => {
-              counter++;
               console.log(`${obj.name} [${obj.phone}] called successfully!`)
           })
           .catch(error => console.log(error));
